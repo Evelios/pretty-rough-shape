@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Squirrel"
+img: squirrel/Squirrel_v4_Panel_1.png
+date: 2022-08-25 12:00:00 +0000
+description: Description
+tag: [Comic]
+---
+
+![](/assets/img/squirrel/Squirrel_v4_Panel_1.png)
+![](/assets/img/squirrel/Squirrel_v4_Panel_2.png)
+![](/assets/img/squirrel/Squirrel_v4_Panel_3.png)
+![](/assets/img/squirrel/Squirrel_v4_Panel_4.png)
+![](/assets/img/squirrel/Squirrel_v4_Panel_5.png)
+![](/assets/img/squirrel/Squirrel_v4_Panel_6.png)

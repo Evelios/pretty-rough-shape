@@ -13,7 +13,7 @@ const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 gulp.task('sass', function () {
     return gulp.src('assets/css/sass/main.sass')
         .pipe(sass.sync({
-                outputStyle: 'compact',  // nested, expanded, compact, compressed
+                outputStyle: 'expanded',  // nested, expanded, compact, compressed
                 onError: browserSync.notify,
                 sourceComments: false
             }).on('error', sass.logError)
@@ -49,7 +49,7 @@ gulp.task('watch', function () {
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
     gulp.watch('assets/img/**/*', ['img']);
     gulp.watch('assets/fonts/**/*', ['fonts']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_pages/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_pages/*.html', '_posts/*.markdown'], ['jekyll-rebuild']);
 });
 
 // Build the Jekyll Site

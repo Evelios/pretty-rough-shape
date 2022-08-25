@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Pack_Rat"
+img: pack-rat/Pack_Rat_v2_Panel_1.png
+date: 2022-08-25 12:00:00 +0000
+description: Description
+tag: [Comic]
+---
+
+![](/assets/img/pack-rat/Pack_Rat_v2_Panel_1.png)
+![](/assets/img/pack-rat/Pack_Rat_v2_Panel_2.png)
+![](/assets/img/pack-rat/Pack_Rat_v2_Panel_3.png)
+![](/assets/img/pack-rat/Pack_Rat_v2_Panel_4.png)
+![](/assets/img/pack-rat/Pack_Rat_v2_Panel_5.png)
+![](/assets/img/pack-rat/Pack_Rat_v2_Panel_6.png)
