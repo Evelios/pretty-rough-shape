@@ -27,6 +27,40 @@ The post page would look like this:
 
 ## Installation:
 
+__If using the Apple M1 chip__: [Installing jekyll](https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/)
+
+
+```sh
+npm install -g gulp  # Install bundle manager if not already done
+
+npm install
+npm install --target_arch=xc64  # Use this instead for MacOS with M1 chip
+```
+
+## Development
+
+Build the website
+```sh
+gulp jekyll-build
+```
+
+Re-build the website
+```sh
+gulp jekyll-rebuild
+```
+
+Build the website and then launch the server
+```sh
+gulp browser-sync
+```
+
+Watch the scss, html, and img files
+```sh
+gulp watch
+```
+
+
+
 Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
 
 ## License
