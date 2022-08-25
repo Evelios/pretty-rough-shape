@@ -35,6 +35,8 @@ npm install -g gulp  # Install bundle manager if not already done
 
 npm install
 npm install --target_arch=xc64  # Use this instead for MacOS with M1 chip
+
+gem install jekyll jekyll-paginate jekyll-sitemap
 ```
 
 ## Development
