@@ -3768,14 +3768,14 @@ cite {
   transition: all 0.4s;
 }
 .chapters .chapter img:hover {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .chapters .chapter_inner {
   position: absolute;
-  left: 2.5%;
-  bottom: 10%;
+  right: 2.5%;
+  bottom: 12.5%;
   padding: 0.5rem 1rem;
   display: inline-block;
   background-color: rgba(210, 84, 105, 0.9);
@@ -3977,13 +3977,13 @@ cite {
 }
 
 .post_wrapper, .entry_content {
-  max-width: 900px;
+  max-width: 740px;
   padding: 0 1.85rem;
   margin: 0 auto;
 }
 
 .post_content {
-  width: 960px;
+  width: 800px;
   max-width: 90%;
   margin: 1.5rem auto;
 }
