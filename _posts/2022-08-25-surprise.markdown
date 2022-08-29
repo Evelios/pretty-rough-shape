@@ -7,7 +7,7 @@ description: Description
 tag: [Comic]
 ---
 
-![](/assets/img/surprise/Surprise_v5_Panel_1.png)
-![](/assets/img/surprise/Surprise_v5_Panel_2.png)
-![](/assets/img/surprise/Surprise_v5_Panel_3.png)
-![](/assets/img/surprise/Surprise_v5_Panel_4.png)
+![](../assets/img/surprise/Surprise_v5_Panel_1.png)
+![](../assets/img/surprise/Surprise_v5_Panel_2.png)
+![](../assets/img/surprise/Surprise_v5_Panel_3.png)
+![](../assets/img/surprise/Surprise_v5_Panel_4.png)

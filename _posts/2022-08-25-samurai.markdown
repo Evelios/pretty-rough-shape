@@ -7,9 +7,9 @@ description: Description
 tag: [Comic]
 ---
 
-![](/assets/img/samurai/Samurai_v5_Panel_1.png)
-![](/assets/img/samurai/Samurai_v5_Panel_2.png)
-![](/assets/img/samurai/Samurai_v5_Panel_3.png)
-![](/assets/img/samurai/Samurai_v5_Panel_4.png)
-![](/assets/img/samurai/Samurai_v5_Panel_5.png)
-![](/assets/img/samurai/Samurai_v5_Panel_6.png)
+![](../assets/img/samurai/Samurai_v5_Panel_1.png)
+![](../assets/img/samurai/Samurai_v5_Panel_2.png)
+![](../assets/img/samurai/Samurai_v5_Panel_3.png)
+![](../assets/img/samurai/Samurai_v5_Panel_4.png)
+![](../assets/img/samurai/Samurai_v5_Panel_5.png)
+![](../assets/img/samurai/Samurai_v5_Panel_6.png)
