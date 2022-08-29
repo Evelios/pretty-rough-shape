@@ -45,7 +45,7 @@ gulp.task('fonts', function () {
 
 // Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
-    return cp.spawn(jekyll, ['build'], {stdio: 'inherit'})
+    return cp.spawn('bundle' , ['exec', jekyll, 'build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
