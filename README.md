@@ -34,18 +34,57 @@ A comic website for the web comic strip "Pretty Rough Shape"
    cd pretty-rough-shape
    ```
 
-   Install additional repository
-   .If using the __Apple M1 chip__: Additional information for setup can be found
-   for [installing jekyll with the M1.](https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/)
+5. Install project automation tools
 
    ```sh
-   npm install -g gulp gulp-cli  # Install bundle manager if not already done
+   # Install the project's automation tools
+   npm install -g gulp gulp-cli
+   ```
 
+6. Download and install the project library dependencies
+
+    __Windows__
+    
+   ```sh
    npm install
-   # npm install --target_arch=xc64  # Use this instead for MacOS with M1 chip
+   ```
 
+   If this fails run the following command and then run `npm install` again.
+   ```sh
+   npm install -g pngquant-bin
+   ```
+
+   __MacOS__
+
+   ```sh
+   npm install
+   ```
+
+   > Install additional repository
+      .If using the __Apple M1 chip__: Additional information for setup can be found
+      for [installing jekyll with the M1.](https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/)
+
+      ```sh
+      npm install --target_arch=xc64  # Use this instead for MacOS with M1 chip
+      
+      ```
+7. Install the Ruby dependency files through the `gem` ruby package manager program
+   ```sh
    gem install -g Gemfile
    ```
+
+## Installation Verification
+
+Open up a new __Git Bash__ terminal and run the following commands. You should be able to run all of the following commands to check that the the programs are installed. It will show you the programs current version. If it says that command is not found, then installation for that program has failed, or the system `PATH` is not correctly pointing to that binary execuitable for that program.
+
+```sh
+node -v
+npm -v
+ruby -v
+gem -v
+jekyll -v
+gulp -v
+```
 
 ## Development
 
@@ -69,3 +108,7 @@ A comic website for the web comic strip "Pretty Rough Shape"
    gulp browser-sync
    ```
 
+* For just Jekyll building without the assistance of the `Gulp` command you can use the following command to get better debugging
+   ```sh
+   bundle exec jekyll serve --livereload
+   ```
