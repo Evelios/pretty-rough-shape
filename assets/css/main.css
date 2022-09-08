@@ -3614,10 +3614,18 @@ template {
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Komikasl;
+  src: url(../fonts/KOMIKASL.ttf);
+}
+@font-face {
+  font-family: BoldlyMissy;
+  src: url(../fonts/BoldlyMissy.otf);
+}
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Komikasl, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #262626;
+  background-color: #363333;
   margin: 0;
 }
 
@@ -3632,7 +3640,7 @@ p {
 blockquote {
   font-size: 1.2rem;
   font-style: italic;
-  border-left: 3px solid #c25b6c;
+  border-left: 3px solid #F78F5D;
   padding-left: 2rem;
   margin: 0 0 1.75rem;
   color: #333333;
@@ -3643,11 +3651,11 @@ blockquote p {
 }
 
 ::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #f6f0f0;
 }
 
 ::-moz-placeholder {
-  color: #ffffff;
+  color: #f6f0f0;
 }
 
 input[type=email], input[type=text], input[type=tel], textarea {
@@ -3667,7 +3675,7 @@ cite {
 }
 
 .button_back {
-  color: #ffffff;
+  color: #f6f0f0;
   font-size: 1.1rem;
   text-decoration: none;
   font-style: italic;
@@ -3700,22 +3708,19 @@ cite {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1c1c1c;
+  background-color: #272121;
   z-index: 1;
 }
 .main_header .logo {
-  color: #ffffff;
+  font-family: BoldlyMissy, sans-serif;
+  color: #e16d36;
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: none;
-  font-weight: 700;
-}
-.main_header .logo span {
-  color: #c0334a;
-  font-weight: 400;
+  font-weight: 500;
 }
 .main_header nav a {
-  color: #ffffff;
+  color: #f6f0f0;
   text-decoration: none;
   margin-left: 2rem;
 }
@@ -3728,7 +3733,7 @@ cite {
 }
 #banner .content .title, #banner .content .sub_title {
   text-align: center;
-  color: #ffffff;
+  color: #f6f0f0;
 }
 #banner .content .title {
   font-size: 3.5rem;
@@ -3740,6 +3745,13 @@ cite {
   margin: 0 auto 2rem auto;
   line-height: 2.5rem;
   font-style: italic;
+}
+#banner .content .sub_title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  margin-top: 0.3rem;
+  border-top: 3px solid #6e6e6e;
 }
 
 .chapters {
@@ -3768,9 +3780,9 @@ cite {
   transition: all 0.4s;
 }
 .chapters .chapter img:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.21);
+      -ms-transform: scale(1.21);
+          transform: scale(1.21);
 }
 .chapters .chapter_inner {
   position: absolute;
@@ -3778,7 +3790,7 @@ cite {
   bottom: 12.5%;
   padding: 0.5rem 1rem;
   display: inline-block;
-  background-color: rgba(210, 84, 105, 0.9);
+  background-color: rgba(247, 143, 93, 0.9);
 }
 .chapters .chapter_inner .chapter_number, .chapters .chapter_inner .chapter_title {
   color: #e6e6e6;
@@ -3804,7 +3816,7 @@ cite {
 .newsletter {
   padding: 2rem 0;
   text-align: center;
-  color: #ffffff;
+  color: #f6f0f0;
 }
 .newsletter .newsletter_title {
   text-transform: uppercase;
@@ -3837,11 +3849,11 @@ cite {
 .newsletter form .subscribe_btn {
   width: 170px;
   padding: 1.35rem;
-  color: #ffffff;
+  color: #f6f0f0;
   font-size: 0.9rem;
   text-align: center;
   text-transform: uppercase;
-  background-color: #c0334a;
+  background-color: #e16d36;
   cursor: pointer;
   border-radius: 2.5rem;
   border: none;
@@ -3854,10 +3866,10 @@ cite {
   transition: background 0.35s ease-in-out;
 }
 .newsletter form .subscribe_btn:hover {
-  background-color: rgba(192, 51, 74, 0.75);
+  background-color: rgba(225, 109, 54, 0.75);
 }
 .newsletter form .subscribe_btn:active {
-  background-color: rgba(192, 51, 74, 0.5);
+  background-color: rgba(225, 109, 54, 0.5);
 }
 
 .pagination {
@@ -3873,7 +3885,7 @@ cite {
   text-decoration: none;
 }
 .pagination a:hover {
-  color: #ffffff;
+  color: #f6f0f0;
 }
 .pagination .active {
   border-bottom: 1px solid #6e6e6e;
@@ -3887,7 +3899,7 @@ cite {
   bottom: 25px;
   background-color: #333333;
   border-radius: 0.3rem;
-  color: #ffffff;
+  color: #f6f0f0;
   font-size: 25px;
   width: 50px;
   height: 50px;
@@ -3908,13 +3920,13 @@ cite {
   right: 30px;
 }
 .top:hover {
-  color: #ffffff;
-  background-color: #c0334a;
+  color: #f6f0f0;
+  background-color: #e16d36;
   opacity: 0.8;
 }
 
 .comment_area {
-  background-color: #ffffff;
+  background-color: #f6f0f0;
 }
 .comment_area .article-comments {
   max-width: 900px;
@@ -3923,7 +3935,7 @@ cite {
 }
 
 .main_footer {
-  background-color: #1c1c1c;
+  background-color: #272121;
 }
 
 .social_footer {
@@ -3945,14 +3957,14 @@ cite {
   text-decoration: none;
   font-size: 1.75rem;
   border-radius: 0.3rem;
-  background-color: #262626;
+  background-color: #363333;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 .social_footer a:hover {
-  background-color: #c0334a;
-  color: #ffffff;
+  background-color: #e16d36;
+  color: #f6f0f0;
 }
 
 .copyright {
@@ -3960,20 +3972,20 @@ cite {
   text-align: center;
 }
 .copyright p {
-  color: #ffffff;
+  color: #f6f0f0;
   font-size: 0.7rem;
   text-transform: uppercase;
   margin: 0;
 }
 .copyright a {
   text-decoration: none;
-  color: #c0334a;
+  color: #e16d36;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 .copyright a:hover {
-  color: rgba(192, 51, 74, 0.75);
+  color: rgba(225, 109, 54, 0.75);
 }
 
 .post_wrapper, .entry_content {
@@ -3989,7 +4001,7 @@ cite {
 }
 
 .post {
-  background-color: #ffffff;
+  background-color: #f6f0f0;
   margin-bottom: 1.5rem;
 }
 .post header {
@@ -4001,11 +4013,11 @@ cite {
 .post header .post_title {
   font-size: 3rem;
   margin: 0;
-  color: #262626;
+  color: #363333;
 }
 .post header .post_meta {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   color: #333333;
 }
@@ -4014,7 +4026,7 @@ cite {
   display: block;
   width: 100%;
   margin: 1rem auto 0 auto;
-  border-top: 3px solid #c0334a;
+  border-top: 3px solid #e16d36;
   horiz-align: center;
 }
 .post .entry_content {
@@ -4026,7 +4038,7 @@ cite {
 
 .post_footer {
   padding: 2rem 0;
-  background-color: #ffffff;
+  background-color: #f6f0f0;
   border-top: 2px solid #6e6e6e;
 }
 .post_footer span {
@@ -4047,8 +4059,8 @@ cite {
   transition: all 0.35s ease-in-out;
 }
 .post_footer a:hover {
-  background-color: #d25469;
-  color: #ffffff;
+  background-color: #F78F5D;
+  color: #f6f0f0;
 }
 .post_footer .post_share {
   float: left;
@@ -4069,7 +4081,7 @@ cite {
 .author {
   padding: 2rem 0;
   margin-bottom: 1.5rem;
-  background-color: #ffffff;
+  background-color: #f6f0f0;
 }
 .author .author_image {
   float: left;
@@ -4089,7 +4101,7 @@ cite {
 .author .author_info .author_title {
   font-size: 1.5rem;
   margin-top: 0;
-  color: #262626;
+  color: #363333;
 }
 .author .author_info .author_title::before, .author .author_info .author_title::after {
   content: " — ";
@@ -4115,7 +4127,7 @@ cite {
 }
 
 .recent_box {
-  background-color: #ffffff;
+  background-color: #f6f0f0;
   padding: 2rem 0;
   margin-bottom: 1.5rem;
 }
@@ -4145,18 +4157,9 @@ cite {
   color: white;
   font-size: 1rem;
 }
-.recent_box .recent_list .recent_item_post_1 {
-  background-image: url(../images/canyon.jpg);
-}
-.recent_box .recent_list .recent_item_post_2 {
-  background-image: url(../images/malaysia.jpg);
-}
-.recent_box .recent_list .recent_item_post_3 {
-  background-image: url(../images/sweden.jpg);
-}
 
 #tags {
-  background-color: #ffffff;
+  background-color: #f6f0f0;
   padding: 2rem 1rem 4rem;
   width: 960px;
   max-width: 90%;
@@ -4165,7 +4168,7 @@ cite {
 #tags h1 {
   text-align: center;
   margin: 2rem 0 3rem;
-  color: #262626;
+  color: #363333;
 }
 #tags .tags {
   padding: 0;
@@ -4175,23 +4178,23 @@ cite {
 #tags .tags li {
   float: left;
   margin: 0 0.5rem 0.5rem 0;
-  border: 1px solid #c0334a;
+  border: 1px solid #e16d36;
   border-radius: 0.5rem;
-  background-color: #d25469;
-  -webkit-box-shadow: 0 2px 0 #c0334a;
-          box-shadow: 0 2px 0 #c0334a;
+  background-color: #F78F5D;
+  -webkit-box-shadow: 0 2px 0 #e16d36;
+          box-shadow: 0 2px 0 #e16d36;
   -webkit-transition: all 0.35s;
   -o-transition: all 0.35s;
   transition: all 0.35s;
 }
 #tags .tags li:hover {
-  background-color: rgba(192, 51, 74, 0.75);
+  background-color: rgba(225, 109, 54, 0.75);
 }
 #tags .tags a {
   display: inline-block;
   text-decoration: none;
   padding: 0.4rem 0.8rem;
-  color: #ffffff;
+  color: #f6f0f0;
 }
 #tags .tags a:active {
   -webkit-transform: translateY(1px);
@@ -4199,10 +4202,10 @@ cite {
           transform: translateY(1px);
 }
 #tags .tag_list a {
-  color: #c0334a;
+  color: #e16d36;
 }
 #tags .tag_list a:hover {
-  color: rgba(192, 51, 74, 0.75);
+  color: rgba(225, 109, 54, 0.75);
 }
 #tags .back_to_home {
   text-align: center;
@@ -4211,7 +4214,7 @@ cite {
 #tags .back_to_home a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #262626;
+  color: #363333;
 }
 #tags .back_to_home a:hover {
   text-decoration: underline;
@@ -4264,11 +4267,11 @@ cite {
 }
 .about .about_social .social_footer a {
   font-size: 1rem;
-  color: #262626;
-  background-color: #ffffff;
+  color: #363333;
+  background-color: #f6f0f0;
 }
 .about .about_social .social_footer a:hover {
-  color: #c0334a;
+  color: #e16d36;
 }
 
 .contact {
@@ -4297,7 +4300,7 @@ cite {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #f6f0f0;
 }
 .container_contact .form_title::before, .container_contact .form_title::after {
   content: " — ";
@@ -4314,7 +4317,7 @@ cite {
   width: 100%;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.4);
-  color: #ffffff;
+  color: #f6f0f0;
   font-weight: 300;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -4325,7 +4328,7 @@ cite {
 }
 .container_contact .form .form_btn {
   width: inherit;
-  color: #ffffff;
+  color: #f6f0f0;
   text-transform: uppercase;
   outline: none;
   border: none;
@@ -4339,7 +4342,7 @@ cite {
 }
 .container_contact .form .form_btn:hover {
   background-color: rgba(191, 127, 127, 0.6);
-  color: #ffffff;
+  color: #f6f0f0;
 }
 .container_contact .form .form_btn:active {
   -webkit-transform: translateY(2px);
