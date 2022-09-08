@@ -3651,11 +3651,11 @@ blockquote p {
 }
 
 ::-webkit-input-placeholder {
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 
 ::-moz-placeholder {
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 
 input[type=email], input[type=text], input[type=tel], textarea {
@@ -3675,7 +3675,7 @@ cite {
 }
 
 .button_back {
-  color: #f6f0f0;
+  color: #f6f2f2;
   font-size: 1.1rem;
   text-decoration: none;
   font-style: italic;
@@ -3708,20 +3708,21 @@ cite {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #272121;
+  background-color: #272323;
+  font-family: BoldlyMissy, sans-serif;
   z-index: 1;
 }
 .main_header .logo {
-  font-family: BoldlyMissy, sans-serif;
   color: #e16d36;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   text-decoration: none;
   font-weight: 500;
 }
 .main_header nav a {
-  color: #f6f0f0;
+  color: #f6f2f2;
   text-decoration: none;
+  font-size: 2rem;
   margin-left: 2rem;
 }
 
@@ -3733,10 +3734,10 @@ cite {
 }
 #banner .content .title, #banner .content .sub_title {
   text-align: center;
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 #banner .content .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 0 0 1rem 0;
 }
 #banner .content .sub_title {
@@ -3745,13 +3746,6 @@ cite {
   margin: 0 auto 2rem auto;
   line-height: 2.5rem;
   font-style: italic;
-}
-#banner .content .sub_title::after {
-  content: "";
-  display: block;
-  width: 40px;
-  margin-top: 0.3rem;
-  border-top: 3px solid #6e6e6e;
 }
 
 .chapters {
@@ -3816,7 +3810,7 @@ cite {
 .newsletter {
   padding: 2rem 0;
   text-align: center;
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 .newsletter .newsletter_title {
   text-transform: uppercase;
@@ -3849,7 +3843,7 @@ cite {
 .newsletter form .subscribe_btn {
   width: 170px;
   padding: 1.35rem;
-  color: #f6f0f0;
+  color: #f6f2f2;
   font-size: 0.9rem;
   text-align: center;
   text-transform: uppercase;
@@ -3885,7 +3879,7 @@ cite {
   text-decoration: none;
 }
 .pagination a:hover {
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 .pagination .active {
   border-bottom: 1px solid #6e6e6e;
@@ -3899,7 +3893,7 @@ cite {
   bottom: 25px;
   background-color: #333333;
   border-radius: 0.3rem;
-  color: #f6f0f0;
+  color: #f6f2f2;
   font-size: 25px;
   width: 50px;
   height: 50px;
@@ -3920,13 +3914,13 @@ cite {
   right: 30px;
 }
 .top:hover {
-  color: #f6f0f0;
+  color: #f6f2f2;
   background-color: #e16d36;
   opacity: 0.8;
 }
 
 .comment_area {
-  background-color: #f6f0f0;
+  background-color: #f6f2f2;
 }
 .comment_area .article-comments {
   max-width: 900px;
@@ -3935,7 +3929,7 @@ cite {
 }
 
 .main_footer {
-  background-color: #272121;
+  background-color: #272323;
 }
 
 .social_footer {
@@ -3964,7 +3958,7 @@ cite {
 }
 .social_footer a:hover {
   background-color: #e16d36;
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 
 .copyright {
@@ -3972,7 +3966,7 @@ cite {
   text-align: center;
 }
 .copyright p {
-  color: #f6f0f0;
+  color: #f6f2f2;
   font-size: 0.7rem;
   text-transform: uppercase;
   margin: 0;
@@ -4001,7 +3995,7 @@ cite {
 }
 
 .post {
-  background-color: #f6f0f0;
+  background-color: #f6f2f2;
   margin-bottom: 1.5rem;
 }
 .post header {
@@ -4011,13 +4005,13 @@ cite {
   text-align: center;
 }
 .post header .post_title {
-  font-size: 3rem;
+  font-size: 3.3rem;
   margin: 0;
   color: #363333;
 }
 .post header .post_meta {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
   color: #333333;
 }
@@ -4038,7 +4032,7 @@ cite {
 
 .post_footer {
   padding: 2rem 0;
-  background-color: #f6f0f0;
+  background-color: #f6f2f2;
   border-top: 2px solid #6e6e6e;
 }
 .post_footer span {
@@ -4060,7 +4054,7 @@ cite {
 }
 .post_footer a:hover {
   background-color: #F78F5D;
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 .post_footer .post_share {
   float: left;
@@ -4081,7 +4075,7 @@ cite {
 .author {
   padding: 2rem 0;
   margin-bottom: 1.5rem;
-  background-color: #f6f0f0;
+  background-color: #f6f2f2;
 }
 .author .author_image {
   float: left;
@@ -4127,7 +4121,7 @@ cite {
 }
 
 .recent_box {
-  background-color: #f6f0f0;
+  background-color: #f6f2f2;
   padding: 2rem 0;
   margin-bottom: 1.5rem;
 }
@@ -4159,7 +4153,7 @@ cite {
 }
 
 #tags {
-  background-color: #f6f0f0;
+  background-color: #f6f2f2;
   padding: 2rem 1rem 4rem;
   width: 960px;
   max-width: 90%;
@@ -4194,7 +4188,7 @@ cite {
   display: inline-block;
   text-decoration: none;
   padding: 0.4rem 0.8rem;
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 #tags .tags a:active {
   -webkit-transform: translateY(1px);
@@ -4268,7 +4262,7 @@ cite {
 .about .about_social .social_footer a {
   font-size: 1rem;
   color: #363333;
-  background-color: #f6f0f0;
+  background-color: #f6f2f2;
 }
 .about .about_social .social_footer a:hover {
   color: #e16d36;
@@ -4300,7 +4294,7 @@ cite {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 .container_contact .form_title::before, .container_contact .form_title::after {
   content: " — ";
@@ -4317,7 +4311,7 @@ cite {
   width: 100%;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.4);
-  color: #f6f0f0;
+  color: #f6f2f2;
   font-weight: 300;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -4328,7 +4322,7 @@ cite {
 }
 .container_contact .form .form_btn {
   width: inherit;
-  color: #f6f0f0;
+  color: #f6f2f2;
   text-transform: uppercase;
   outline: none;
   border: none;
@@ -4342,7 +4336,7 @@ cite {
 }
 .container_contact .form .form_btn:hover {
   background-color: rgba(191, 127, 127, 0.6);
-  color: #f6f0f0;
+  color: #f6f2f2;
 }
 .container_contact .form .form_btn:active {
   -webkit-transform: translateY(2px);
