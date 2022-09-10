@@ -11,6 +11,11 @@ layout: default
     </header> <!-- End Header -->
 
     <div class="entry_content">
+
+      {% if page.comic %}
+        {% include carousel.html images=page.comic dir="/assets/img/" height="100" unit="%" %}
+      {% endif %}
+      
       {{page.content | markdownify}}
     </div>
     

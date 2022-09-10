@@ -10,7 +10,8 @@ const browserSync = require('browser-sync');
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
 
-// Adding extra dubugging information to be displayed into the console
+// Adding extra debugging information to be displayed into the console
+/*
 (function() {
     var childProcess = require("child_process");
     var oldSpawn = childProcess.spawn;
@@ -22,6 +23,7 @@ const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
     }
     childProcess.spawn = mySpawn;
 })();
+ */
 
 // Compile files
 gulp.task('sass', function () {

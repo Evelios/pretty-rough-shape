@@ -5,11 +5,11 @@ img: vacation/Vacation_v3_Panel_1.png
 date: 2022-08-25 12:00:00 +0000
 description: Description
 tag: [Comic]
+comic:
+    - vacation/Vacation_v3_Panel_1.png
+    - vacation/Vacation_v3_Panel_2.png
+    - vacation/Vacation_v3_Panel_3.png
+    - vacation/Vacation_v3_Panel_4.png
+    - vacation/Vacation_v3_Panel_5.png
+    - vacation/Vacation_v3_Panel_6.png 
 ---
-
-![](../assets/img/vacation/Vacation_v3_Panel_1.png)
-![](../assets/img/vacation/Vacation_v3_Panel_2.png)
-![](../assets/img/vacation/Vacation_v3_Panel_3.png)
-![](../assets/img/vacation/Vacation_v3_Panel_4.png)
-![](../assets/img/vacation/Vacation_v3_Panel_5.png)
-![](../assets/img/vacation/Vacation_v3_Panel_6.png)

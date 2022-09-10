@@ -20,13 +20,22 @@ A comic website for the web comic strip "Pretty Rough Shape"
         + Under your GitHub profile go to __Settings -> SSH and GPG Keys -> New SSH Key__
         + Paste the SSH key from the previous command into that box and give your PC Key a name and press __Add SSH
           Key__
-        
-3. Following the instructions for [installing Jekyll and Ruby](https://jekyllrb.com/docs/installation/windows/)
+
+3. Install [Node](https://nodejs.org/en/). This will give you access to the `node` and `npm` commands. You can verify
+   their installation by running the `node -v` and `npm -v` commands.
+
+4. Following the instructions for [installing Jekyll and Ruby](https://jekyllrb.com/docs/installation/windows/)
     * Download & install [Ruby+Devkit](https://www.ruby-lang.org/en/) with the RubyInstaller
         + Install Ruby with the `MSYS2 and MINGW development tool chain`
         + This should open a new window `rdisk install` where you download extra Ruby libraries
+    * When ruby is installed, you should have the `ruby` and `gem` commands available in the command line. You can check
+      this with `ruby -v` and `gem -v` commands.
+    * Install `jekyll` and the `bundler` commands through `gem` with the following commands
+       ```sh
+       gem install jekyll bundler
+       ```
 
-4. Open the _Git Bash_ terminal and move into the parent directory that you want to put the `pretty-rough-shape` code
+5. Open the _Git Bash_ terminal and move into the parent directory that you want to put the `pretty-rough-shape` code
    directory and then clone the repository there. For example,
    ```sh
    cd "~/Documents/Web"
@@ -34,17 +43,17 @@ A comic website for the web comic strip "Pretty Rough Shape"
    cd pretty-rough-shape
    ```
 
-5. Install project automation tools
+6. Install project automation tools. On ubuntu, you may need to run this as a super user using `sudo`.
 
    ```sh
    # Install the project's automation tools
    npm install -g gulp gulp-cli
    ```
 
-6. Download and install the project library dependencies
+7. Download and install the project library dependencies
 
-    __Windows__
-    
+   __Windows__
+
    ```sh
    npm install
    ```
@@ -61,21 +70,25 @@ A comic website for the web comic strip "Pretty Rough Shape"
    ```
 
    > Install additional repository
-      .If using the __Apple M1 chip__: Additional information for setup can be found
-      for [installing jekyll with the M1.](https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/)
+   .If using the __Apple M1 chip__: Additional information for setup can be found
+   for [installing jekyll with the M1.](https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/)
 
       ```sh
       npm install --target_arch=xc64  # Use this instead for MacOS with M1 chip
       
       ```
-7. Install the Ruby dependency files through the `gem` ruby package manager program
+8. Install the Ruby dependency files through the `gem` ruby package manager program. When running on Ubuntu, you may
+   need to run the command as root using `sudo`.
    ```sh
    gem install -g Gemfile
    ```
 
 ## Installation Verification
 
-Open up a new __Git Bash__ terminal and run the following commands. You should be able to run all of the following commands to check that the the programs are installed. It will show you the programs current version. If it says that command is not found, then installation for that program has failed, or the system `PATH` is not correctly pointing to that binary execuitable for that program.
+Open up a new __Git Bash__ terminal and run the following commands. You should be able to run all of the following
+commands to check that the the programs are installed. It will show you the programs current version. If it says that
+command is not found, then installation for that program has failed, or the system `PATH` is not correctly pointing to
+that binary executable for that program. If you are running on __Windows__, make sure to close and reopen your terminal before running these commands. Windows only refreshes it's `PATH` in the command line when the terminal is launched.
 
 ```sh
 node -v
@@ -83,6 +96,7 @@ npm -v
 ruby -v
 gem -v
 jekyll -v
+bundle -v
 gulp -v
 ```
 
@@ -108,7 +122,8 @@ gulp -v
    gulp browser-sync
    ```
 
-* For just Jekyll building without the assistance of the `Gulp` command you can use the following command to get better debugging
+* For just Jekyll building without the assistance of the `Gulp` command you can use the following command to get better
+  debugging
    ```sh
    bundle exec jekyll serve --livereload
    ```
