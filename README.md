@@ -1,6 +1,10 @@
 # Pretty Rough Shape
 
-A comic website for the web comic strip "Pretty Rough Shape"
+A comic website for the web comic strip "Pretty Rough Shape".
+
+* [Installation](#installation)
+* [Installation Verification](#installation-verification)
+* [Development](#development)
 
 ## Installation:
 
@@ -43,7 +47,7 @@ A comic website for the web comic strip "Pretty Rough Shape"
    cd pretty-rough-shape
    ```
 
-6. Install project automation tools. On ubuntu, you may need to run this as a super user using `sudo`.
+6. Install project automation tools. On ubuntu, you may need to run this as a superuser using `sudo`.
 
    ```sh
    # Install the project's automation tools
@@ -58,7 +62,7 @@ A comic website for the web comic strip "Pretty Rough Shape"
    npm install
    ```
 
-   If this fails run the following command and then run `npm install` again.
+   If the previous command failed, run the following command and then run `npm install` again.
    ```sh
    npm install -g pngquant-bin
    ```
@@ -102,27 +106,21 @@ gulp -v
 
 ## Development
 
-* Standard development with live reload, watch the scss, html, and img files
-   ```sh
-   gulp watch
-   ```
+* Standard development with live reload, watch the scss, html, and img files. This will build the website, launch a
+  browser window, and watch for any file changes and updating the browser with new changes.
+  ```sh
+  gulp
+  ```
 
-* Build the website
-   ```sh
-   gulp jekyll-build
-   ```
+* `gulp build`: Build the website
+* `gulp watch`: Build the website Watch for any changes from the website
+*  `gulp clean`: Clean up and remove all generated files from building and deployment
+* `gulp fonts`: Publish just the fonts
+* `gulp sass`: Publish just the sass/css files
+* `gulp image`: Publish just the images
 
-* Re-build the website
-   ```sh
-   gulp jekyll-rebuild
-   ```
 
-* Build the website and then launch the server
-   ```sh
-   gulp browser-sync
-   ```
-
-* For just Jekyll building without the assistance of the `Gulp` command you can use the following command to get better
+* For just Jekyll building without the assistance of the `gulp` command you can use the following command to get better
   debugging
    ```sh
    bundle exec jekyll serve --livereload
