@@ -44,6 +44,7 @@ paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
+
 plugins:
   - jekyll
   - jekyll-paginate
@@ -51,6 +52,7 @@ plugins:
   - faraday-retry
 
 include: [_pages]
+
 exclude:
   - node_modules
   - gulpfile.js

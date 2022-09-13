@@ -24,6 +24,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^9.0.2",
+    "rfs": "^9.0.6",
     "sass": "1.54.5",
     "susy": "^2.2.12"
   }

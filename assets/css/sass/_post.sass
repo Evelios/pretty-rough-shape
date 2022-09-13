@@ -1,10 +1,13 @@
 // - - - - - - - - - - Post Styles - - - - - - - - - - //
 
 @import variables
+@import '../../../node_modules/rfs/sass'
 
 .post_wrapper, .entry_content
   max-width: 740px
-  padding: 0 1.85rem
+  +padding-left(1.85rem)
+  +padding-right(1.85rem)
+  //padding: 0 1.85rem
   margin: 0 auto
 
 .post_content
@@ -22,12 +25,12 @@
     padding: 3rem 3rem 0 3rem
     text-align: center
     .post_title
-      font-size: 3.3rem
+      +font-size(2.7rem)
       margin: 0
       color: $dark_gray
     .post_meta
       text-transform: uppercase
-      font-size: 1.2rem
+      +font-size(1rem)
       margin: 0
       color: $dark_light
     &::after
@@ -47,7 +50,7 @@
 .post_footer
   padding: 2rem 0
   background-color: $white
-  border-top: 2px solid $color_gray
+  border-top: 2px solid $gray-accent
   span
     text-transform: uppercase
     font-size: 0.8rem
