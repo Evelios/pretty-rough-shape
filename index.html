@@ -2,6 +2,12 @@
 layout: main
 ---
 
+<!-- Include the CollectTags Helper Functions -->
+{% if site.tags != "" %}
+  {% include collecttags.html %}
+{% endif %}
+
+<!-- Create Paginator Posts -->
 {% for post in paginator.posts %}
   <div class="chapter">
     <a href="{{post.url | prepend: site.baseurl}}">
