@@ -3,13 +3,6 @@
 @import variables
 @import '../../../node_modules/rfs/sass'
 
-.post_wrapper, .entry_content
-  max-width: 740px
-  +padding-left(1.85rem)
-  +padding-right(1.85rem)
-  //padding: 0 1.85rem
-  margin: 0 auto
-
 .post_content
   width: 800px
   max-width: 90%
@@ -18,7 +11,10 @@
 .post
   background-color: $white
   margin-bottom: 1.5rem
-  padding: 3rem
+  +padding-top(2.5rem)
+  +padding-bottom(2.5rem)
+  +padding-left(2.5rem)
+  +padding-right(2.5rem)
 
   header
     font-family: BoldlyMissy, sans-serif
@@ -49,9 +45,8 @@
     width: 100%
 
 .post_footer
-  padding: 2rem 0
+  +padding(0.5rem)
   background-color: $white
-  border-top: 2px solid $gray-accent
   span
     text-transform: uppercase
     font-size: 0.8rem
