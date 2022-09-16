@@ -1,9 +1,31 @@
-
 <header class="main_header">
   <a href="{{site.baseurl}}/" class="logo">{% if site.header %}{{site.header}}{% else %}B<span>ef</span>{% endif %}</a>
-  <nav class="main_menu">
-    <a href="{{site.baseurl}}/comics/">Comics</a>
-    <a href="{{site.baseurl}}/memories/">Memories</a>
-    <a href="{{site.baseurl}}/about/">About</a>
+
+  <nav>
+    <button class="hamburger hamburger--spring-r" type="button"
+            aria-label="Menu" aria-controls="navigation" aria-expanded="true/false">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="hamburger-label">Menu</span>
+    </button>
+
+    <div class="navigation">
+      <a href="{{site.baseurl}}/comics/">Comics</a>
+      <a href="{{site.baseurl}}/memories/">Memories</a>
+      <a href="{{site.baseurl}}/about/">About</a>
+    </div>
   </nav>
 </header> <!-- End Section Header -->
+
+<script>
+
+  const hamburger = document.querySelector(".hamburger");
+  const navigation = document.querySelector(".navigation");
+
+  hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+    navigation.classList.toggle("is-active");
+  });
+
+</script>

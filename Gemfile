@@ -6,5 +6,6 @@ gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll'
 gem 'webrick'
 gem 'wdm'
+gem 'hamburgers'
 
 # gem "rails"

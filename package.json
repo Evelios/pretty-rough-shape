@@ -27,5 +27,8 @@
     "rfs": "^9.0.6",
     "sass": "1.54.5",
     "susy": "^2.2.12"
+  },
+  "dependencies": {
+    "hamburgers": "^1.2.1"
   }
 }

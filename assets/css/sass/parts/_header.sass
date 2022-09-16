@@ -1,7 +1,19 @@
 // - - - - - - - - - - Header Styles - - - - - - - - - - //
 
 @import ../variables
-@import '../../../node_modules/rfs/sass'
+@import node_modules/rfs/sass
+
+// ---- Hamburger Overrides ----
+
+$hamburger-types: (spring-r)
+$hamburger-layer-color  : $gray_accent
+
+.hamburger-label
+  +font-size(2em)
+  color: $gray_accent
+  padding-left: 0.5em
+
+// ---- Header Styles ----
 
 .main_header
   padding: 2rem
@@ -16,7 +28,12 @@
     color: $highlight
     margin: 0
     text-decoration: none
-  nav
+  .navigation
+    opacity: 0
+
+    .is-active
+      opacity: 1
+
     a
       color: $gray-accent
       text-decoration: none
