@@ -21,18 +21,19 @@
   padding: 3rem
 
   header
+    font-family: BoldlyMissy, sans-serif
     position: relative
     overflow: hidden
     text-align: center
     .post_title
-      +font-size(2.7rem)
+      +font-size(4rem)
       margin: 0
-      color: $dark_gray
+      color: $dark
     .post_meta
       text-transform: uppercase
-      +font-size(1rem)
+      +font-size(2rem)
       margin: 0
-      color: $dark_light
+      color: $gray
     &::after
       content: ""
       display: block
@@ -60,8 +61,8 @@
     margin-left: 0.1rem
     margin-bottom: 0.3rem
     padding: 0.5rem 1rem
-    color: $color_gray
-    background-color: $white_gray
+    color: $light
+    background-color: $lightest
     display: inline-block
     transition: all .35s ease-in-out
     &:hover
@@ -98,7 +99,7 @@
     .author_title
       font-size: 1.5rem
       margin-top: 0
-      color: $dark_gray
+      color: $dark
       &::before,
       &::after
         content: " — "
