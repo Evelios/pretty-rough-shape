@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Squirrel"
-img: squirrel/Squirrel_v4_Panel_1.png
+img: Squirrel/Squirrel_Cover.png
 date: 2022-08-25 12:00:00 +0000
 description: Description
 tag: [Comic]
 comic:
-    - squirrel/Squirrel_v4_Panel_1.png
-    - squirrel/Squirrel_v4_Panel_2.png
-    - squirrel/Squirrel_v4_Panel_3.png
-    - squirrel/Squirrel_v4_Panel_4.png
-    - squirrel/Squirrel_v4_Panel_5.png
-    - squirrel/Squirrel_v4_Panel_6.png
+    - Squirrel/Squirrel_Panel1.png
+    - Squirrel/Squirrel_Panel2.png
+    - Squirrel/Squirrel_Panel3.png
+    - Squirrel/Squirrel_Panel4.png
+    - Squirrel/Squirrel_Panel5.png
+    - Squirrel/Squirrel_Panel6.png
 ---

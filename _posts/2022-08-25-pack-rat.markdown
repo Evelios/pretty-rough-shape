@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Pack_Rat"
-img: pack-rat/Pack_Rat_v2_Panel_1.png
+title: "Pack Rat"
+img: Pack-Rat/PackRat_Cover.png
 date: 2022-08-25 12:00:00 +0000
 description: Description
 tag: [Comic]
 comic:
-    - pack-rat/Pack_Rat_v2_Panel_1.png
-    - pack-rat/Pack_Rat_v2_Panel_2.png
-    - pack-rat/Pack_Rat_v2_Panel_3.png
-    - pack-rat/Pack_Rat_v2_Panel_4.png
-    - pack-rat/Pack_Rat_v2_Panel_5.png
-    - pack-rat/Pack_Rat_v2_Panel_6.png
+    - Pack-Rat/PackRat_Panel1.png
+    - Pack-Rat/PackRat_Panel2.png
+    - Pack-Rat/PackRat_Panel3.png
+    - Pack-Rat/PackRat_Panel4.png
+    - Pack-Rat/PackRat_Panel5.png
+    - Pack-Rat/PackRat_Panel6.png
 ---

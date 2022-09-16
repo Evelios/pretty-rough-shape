@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Mountain"
-img: mountain/Mountain_v4_Panel_1.png
+img: Mountain/Mountain_Cover.png
 date: 2022-08-25 12:00:00 +0000
 description: Description
 tag: [Comic]
 comic:
-    - mountain/Mountain_v4_Panel_1.png
-    - mountain/Mountain_v4_Panel_2.png
-    - mountain/Mountain_v4_Panel_3.png
-    - mountain/Mountain_v4_Panel_4.png
-    - mountain/Mountain_v4_Panel_5.png
-    - mountain/Mountain_v4_Panel_6.png
+    - Mountain/Mountain_Panel1.png
+    - Mountain/Mountain_Panel2.png
+    - Mountain/Mountain_Panel3.png
+    - Mountain/Mountain_Panel4.png
+    - Mountain/Mountain_Panel5.png
+    - Mountain/Mountain_Panel6.png
 ---

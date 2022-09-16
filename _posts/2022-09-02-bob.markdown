@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Bob"
-img: bob/Bob%20v1_Cover.png
+img: Bob/Bob_Cover.png
 date: 2022-09-02 12:00:00 +0000
 description: Description
 tag: [Comic]
 comic:
-    - bob/Bob%20v1_Panel%201.png
-    - bob/Bob%20v1_Panel%202.png
-    - bob/Bob%20v1_Panel%203.png
-    - bob/Bob%20v1_Panel%204.png
-    - bob/Bob%20v1_Panel%205.png
-    - bob/Bob%20v1_Panel%206.png
+    - Bob/Bob_Panel1.png
+    - Bob/Bob_Panel2.png
+    - Bob/Bob_Panel3.png
+    - Bob/Bob_Panel4.png
+    - Bob/Bob_Panel5.png
+    - Bob/Bob_Panel6.png
 ---

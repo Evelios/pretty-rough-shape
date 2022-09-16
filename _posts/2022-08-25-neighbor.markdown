@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Neighbor"
-img: neighbor/Neighbor_v5_Panel_1.png
+img: Neighbor/Neighbor_Cover.png
 date: 2022-08-25 12:00:00 +0000
 description: Description
 tag: [Comic]
 comic:
-    - neighbor/Neighbor_v5_Panel_1.png
-    - neighbor/Neighbor_v5_Panel_2.png
-    - neighbor/Neighbor_v5_Panel_3.png
-    - neighbor/Neighbor_v5_Panel_4.png
+    - Neighbor/Neighbor_Panel1.png
+    - Neighbor/Neighbor_Panel2.png
+    - Neighbor/Neighbor_Panel3.png
+    - Neighbor/Neighbor_Panel4.png
 ---
