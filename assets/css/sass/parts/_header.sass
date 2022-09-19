@@ -3,39 +3,126 @@
 @import ../variables
 @import node_modules/rfs/sass
 
-// ---- Hamburger Overrides ----
-
-$hamburger-types: (spring-r)
-$hamburger-layer-color  : $gray_accent
-
-.hamburger-label
-  +font-size(2em)
-  color: $gray_accent
-  padding-left: 0.5em
-
-// ---- Header Styles ----
-
-.main_header
-  padding: 2rem
+.top-nav
+  +padding(1.2rem)
   display: flex
-  justify-content: space-between
+  flex-direction: row
   align-items: center
-  background-color: $darkest
+  justify-content: space-between
   font-family: BoldlyMissy, sans-serif
+  background-color: $darkest
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: $lighter
+
+.menu-title > a
+  +font-size(2.7rem)
+  color: $highlight
+  margin-left: 1rem
+  text-decoration: none
+
+.menu
+  display: flex
+  flex-direction: row
+  list-style-type: none
+  margin: 0
+  padding: 0
   z-index: 1
-  .logo
-    +font-size(2.7rem)
-    color: $highlight
+
+.menu > li
+  margin: 0 1rem
+  overflow: hidden
+
+.menu > li > a
+  color: $lighter
+  text-decoration: none
+  +font-size(2rem)
+
+
+.menu-button-container
+  display: none
+  height: 100%
+  width: 30px
+  cursor: pointer
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+#menu-toggle
+  display: none
+
+
+.menu-button,
+.menu-button::before,
+.menu-button::after
+  display: block
+  background-color: $lighter
+  position: absolute
+  height: 4px
+  width: 30px
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1)
+  border-radius: 2px
+
+
+.menu-button::before
+  content: ''
+  margin-top: -8px
+
+
+.menu-button::after
+  content: ''
+  margin-top: 8px
+
+
+#menu-toggle:checked + .menu-button-container .menu-button::before
+  margin-top: 0
+  transform: rotate(405deg)
+
+
+#menu-toggle:checked + .menu-button-container .menu-button
+  background: rgba(255, 255, 255, 0)
+
+
+#menu-toggle:checked + .menu-button-container .menu-button::after
+  margin-top: 0
+  transform: rotate(-405deg)
+
+
+@media (max-width: 700px)
+  .menu-button-container
+    display: flex
+
+  .menu
+    position: absolute
+    top: 0
+    margin-top: 70px
+    left: 0
+    flex-direction: column
+    width: 100%
+    justify-content: center
+    align-items: center
+
+  #menu-toggle ~ .menu li
+    height: 0
     margin: 0
-    text-decoration: none
-  .navigation
-    opacity: 0
+    padding: 0
+    border: 0
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1)
 
-    .is-active
-      opacity: 1
+  #menu-toggle:checked ~ .menu li
+    border: 1px solid $darker
+    height: 3em
+    padding: 0.65em
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1)
 
-    a
-      color: $gray-accent
-      text-decoration: none
-      +font-size(2rem)
-      +margin-left(2rem)
+  .menu > li
+    display: flex
+    justify-content: center
+    margin: 0
+    padding: 0.5em 0
+    width: 100%
+    background-color: $darkest
+
+  .menu > li:not(:last-child)
+    border-bottom: 1px solid #444
+
