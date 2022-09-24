@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 <section class="about">
-  <a href="{{site.baseurl}}/" class="button_back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</a>
   <div class="about_box">
     <div class="author">
         <div class="author_image">
@@ -13,6 +12,7 @@ permalink: /about/
         <div class="author_info">
           <h2 class="author_title">{% if site.author-name %}{{site.author-name}}{% else %}John Doe{% endif %}</h2>
           <p class="author_subtitle">{% if site.about-author %}{{site.about-author}}{% else %}Was never found until they were{% endif %}</p>
+          <p class="website_attribution">&copy; {{site.time | date: '%Y'}} All rights reserved. Website template by <a href="https://artemsheludko.github.io" target="_blank">Artem Sheludko</a></p>
         </div>
       </div>
 

@@ -1,12 +1,22 @@
 ---
 layout: default
+title: Comics
+tag: Comic
 ---
-  <main class="page-content" aria-label="Content">
-  <section class="chapters cf">
-      <div class="wrapper flex-row">
-      {{ content }}
-      </div>
-  </section>
-  </main>
+<main class="page-content" aria-label="Content">
+    <section class="chapters cf">
+        <div class="wrapper flex-row">
+            {% for post in site.tags["Comic"] %}
+            <div class="chapter">
+                <a href="{{post.url | prepend: site.baseurl}}">
+                    {% if post.img %}
+                    <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+                    {% endif %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</main>
 
-  {% include pagination.html %}
+{% include pagination.html %}

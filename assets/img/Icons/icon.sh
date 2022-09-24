@@ -9,4 +9,4 @@ inkscape -w 48 -h 48 -o 48.png icon.svg
 
 convert 16.png 32.png 48.png icon.ico
 
-echo `identify icon.ico`
+echo $(identify icon.ico)

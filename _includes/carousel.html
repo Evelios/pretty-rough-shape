@@ -7,15 +7,11 @@
           <input class="carousel__activator" type="radio" name="carousel{{ number }}" id="{{ number }}{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
         {% endfor %}
         {% for item in include.images %}
-          {% if forloop.index == forloop.length %}
-            {% assign nextindex = 0 %}
-          {% else %}
+          {% if forloop.index != forloop.length %}
             {% assign nextindex = forloop.index0 | plus: 1 %}
           {% endif %}
           {% assign nextletter = letters[nextindex] %}
-          {% if forloop.index0 == 0 %}
-            {% assign previndex = forloop.length | minus: 1 %}
-          {% else %}
+          {% if forloop.index0 != 0 %}
             {% assign previndex = forloop.index0 | minus: 1 %}
           {% endif %}
           {% assign prevletter = letters[previndex] %}
