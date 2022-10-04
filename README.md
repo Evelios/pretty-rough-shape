@@ -79,7 +79,6 @@ A comic website for the web comic strip "Pretty Rough Shape".
 
       ```sh
       npm install --target_arch=xc64  # Use this instead for MacOS with M1 chip
-      
       ```
 8. Install the Ruby dependency files through the `gem` ruby package manager program. When running on Ubuntu, you may
    need to run the command as root using `sudo`.
