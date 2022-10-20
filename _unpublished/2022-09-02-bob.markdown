@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Bob"
+img: Bob/Bob_Cover.png
+date: 2022-09-02 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - Bob/Bob_Panel1.png
+    - Bob/Bob_Panel2.png
+    - Bob/Bob_Panel3.png
+    - Bob/Bob_Panel4.png
+    - Bob/Bob_Panel5.png
+    - Bob/Bob_Panel6.png
+---

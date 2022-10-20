@@ -1,0 +1,13 @@
+---
+layout: post
+title: Neighbor
+img: Comics/Neighbor/Neighbor_Cover.png
+date: 2022-10-09 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - Comics/Neighbor/Neighbor_Panel1.png
+    - Comics/Neighbor/Neighbor_Panel2.png
+    - Comics/Neighbor/Neighbor_Panel3.png
+    - Comics/Neighbor/Neighbor_Panel4.png
+---

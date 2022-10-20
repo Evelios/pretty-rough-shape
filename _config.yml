@@ -12,13 +12,13 @@ url: "https://prettyroughshape.com" # the base hostname & protocol for your site
 
 
 # Author settings
-author-pic: Turtle.png # your photo
+author-pic: AboutPortrait.png # your photo
 author-name: Garry Waters # your name
 about-author: > # about author
-  The dude is currently in pretty rough shape.
-email: your-email@domain.com # your email
+  Just a dude in pretty rough shape
+email: PrettyRoughShape@gmail.com # your email
 phone: (555)-555-5555 # your phone number
-website: https://dwayne.example.com # you website
+website: https://prettyroughshape.com # you website
 
 
 # Social link

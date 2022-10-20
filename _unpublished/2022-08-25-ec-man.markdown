@@ -1,0 +1,15 @@
+---
+layout: post
+title: "EC Man"
+img: EC-Man/ECMan_Cover.png
+date: 2022-08-25 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - EC-Man/ECMan_Panel1.png
+    - EC-Man/ECMan_Panel2.png
+    - EC-Man/ECMan_Panel3.png
+    - EC-Man/ECMan_Panel4.png
+    - EC-Man/ECMan_Panel5.png
+    - EC-Man/ECMan_Panel6.png
+---
