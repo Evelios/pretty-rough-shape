@@ -4,20 +4,21 @@ title: About
 permalink: /about/
 ---
 <section class="about">
-  <div class="about_box">
-    <div class="author">
-        <div class="author_image">
-          <img src="{{site.baseurl}}/assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="Author image">
-        </div>
-        <div class="author_info">
-          <h2 class="author_title">{% if site.author-name %}{{site.author-name}}{% else %}John Doe{% endif %}</h2>
-          <p class="author_subtitle">{% if site.about-author %}{{site.about-author}}{% else %}Just a dude in pretty rough shape{% endif %}</p>
-          <p class="website_attribution">&copy; {{site.time | date: '%Y'}} All rights reserved<br>Website template by <a href="https://artemsheludko.github.io" target="_blank">Artem Sheludko</a></p>
-        </div>
-      </div>
-
-      <div class="about_social">
-        {% include social_footer.html %}
-      </div>
-    </div> <!-- End Section Author -->
+  <div class="author">
+    <div class="author_image">
+      <img src="{{site.baseurl}}/assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="Author image">
+    </div>
+    <div class="author_info">
+      <h2 class="author_title">{% if site.author-name %}{{site.author-name}}{% else %}John Doe{% endif %}</h2>
+      <p class="author_subtitle">{% if site.about-author %}{{site.about-author}}{% else %}About John Doe{% endif %}</p>
+      <p class="website_attribution">Title Font - Boldly Missy</p>
+      <p class="website_attribution">Body Font - Komika Slim</p>
+      <p class="website_attribution">Website template by <a href="https://artemsheludko.github.io" target="_blank">Artem Sheludko</a></p>
+      <p class="website_attribution">&copy; {{site.time | date: '%Y'}} All rights reserved</p>
+    </div>
+  </div>
 </section>
+
+<div class="about_social">
+  {% include social_footer.html %}
+</div>

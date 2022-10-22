@@ -2,13 +2,15 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  {% include header.html %}
+  <div id="page-container">
+    {% include header.html %}
+    <div id="content-wrap">
+      {{ content }}
 
-  {{ content }}
-
-  {% include arrow_top.html %}
-  {% include javascripts.html %}
-
-  {% include footer.html %}
+      {% include arrow_top.html %}
+      {% include javascripts.html %}
+    </div>
+    {% include footer.html %}
+  </div>
 </body>
 </html>

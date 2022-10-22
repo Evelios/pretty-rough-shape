@@ -8,7 +8,7 @@ permalink: /archive/
 {% assign tag_words = site_tags | split:',' | sort %}
 
 <section id="tags">
-  <h1>Pretty Rough Shape Archive</h1>
+  <h1>Archive</h1>
 <!--cycles through tag list and creates subheader for each tag name...-->
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
