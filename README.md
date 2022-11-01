@@ -2,9 +2,31 @@
 
 A comic website for the web comic strip "Pretty Rough Shape".
 
+* [Development](#development)
 * [Installation](#installation)
 * [Installation Verification](#installation-verification)
-* [Development](#development)
+
+## Development
+
+* Standard development with live reload, watch the scss, html, and img files. This will build the website, launch a
+  browser window, and watch for any file changes and updating the browser with new changes.
+  ```sh
+  gulp
+  ```
+
+* `gulp build`: Build the website
+* `gulp watch`: Build the website Watch for any changes from the website
+*  `gulp clean`: Clean up and remove all generated files from building and deployment
+* `gulp fonts`: Publish just the fonts
+* `gulp sass`: Publish just the sass/css files
+* `gulp image`: Publish just the images
+
+
+* For just Jekyll building without the assistance of the `gulp` command you can use the following command to get better
+  debugging
+   ```sh
+   bundle exec jekyll serve --livereload
+   ```
 
 ## Installation:
 
@@ -102,25 +124,3 @@ jekyll -v
 bundle -v
 gulp -v
 ```
-
-## Development
-
-* Standard development with live reload, watch the scss, html, and img files. This will build the website, launch a
-  browser window, and watch for any file changes and updating the browser with new changes.
-  ```sh
-  gulp
-  ```
-
-* `gulp build`: Build the website
-* `gulp watch`: Build the website Watch for any changes from the website
-*  `gulp clean`: Clean up and remove all generated files from building and deployment
-* `gulp fonts`: Publish just the fonts
-* `gulp sass`: Publish just the sass/css files
-* `gulp image`: Publish just the images
-
-
-* For just Jekyll building without the assistance of the `gulp` command you can use the following command to get better
-  debugging
-   ```sh
-   bundle exec jekyll serve --livereload
-   ```

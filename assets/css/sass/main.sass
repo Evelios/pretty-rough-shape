@@ -8,13 +8,6 @@
 *, *::after, *::before
   box-sizing: border-box
 
-#page-container
-  position: relative
-  min-height: 100vh
-
-#content-wrap
-  padding-bottom: 3.6rem
-
 @font-face
   font-family: Komikasl
   src: url(../fonts/KOMIKASL.ttf)
@@ -27,11 +20,15 @@ body
   font-family: Komikasl, sans-serif
   -webkit-font-smoothing: antialiased
   background-color: $dark
+  display: flex
+  flex-direction: column
+  min-height: 100vh
   margin: 0
+  padding: 0
 
 p
   font-size: 1.1rem
-  line-height: 1.75rem
+  line-height: 150%         // was 1.75rem
   margin: 0 0 1.75rem
   color: $text_color
   font-weight: 400
@@ -65,7 +62,7 @@ cite
 .wrapper
   width: 1440px
   max-width: 90%
-  margin: 0 auto
+  margin: 0.5rem auto
 
 .button_back
   color: $white
