@@ -15,9 +15,9 @@ jobs:
           fetch-depth: 0
 
       - name: Install Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.0' # Not needed with a .ruby-version file
 
       - name: Install Ruby Gems
         run: gem install -g Gemfile
