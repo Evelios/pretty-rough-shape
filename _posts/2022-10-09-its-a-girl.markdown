@@ -1,9 +1,0 @@
----
-layout: post
-title: "It's Gonna Be A Girl"
-img: 2022_its-a-girl.png
-memory: 2022_its-a-girl.png
-date: 2022-10-09 12:00:00 +0000
-description: Description
-tag: [Memory]
----
