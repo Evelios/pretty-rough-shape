@@ -36,18 +36,18 @@ const files = {
 
 
 // Adding extra debugging information to be displayed into the console
-(function () {
-    const childProcess = require("child_process");
-    const oldSpawn = childProcess.spawn;
-
-    function mySpawn() {
-        console.log('spawn called');
-        console.log(arguments);
-        return oldSpawn.apply(this, arguments);
-    }
-
-    childProcess.spawn = mySpawn;
-})();
+// (function () {
+//     const childProcess = require("child_process");
+//     const oldSpawn = childProcess.spawn;
+//
+//     function mySpawn() {
+//         console.log('spawn called');
+//         console.log(arguments);
+//         return oldSpawn.apply(this, arguments);
+//     }
+//
+//     childProcess.spawn = mySpawn;
+// })();
 
 
 // Compile files
@@ -89,7 +89,7 @@ function imageTask() {
             imagemin.mozjpeg({progressive: true}),
             imagemin.optipng({svgoPlugins: [{removeViewBox: false}]}),
         ])))
-        .pipe(dest(files.site.images))
+        .pipe(dest(files.site.img))
         .pipe(browserSync.reload({stream: true}));
 }
 
@@ -112,12 +112,7 @@ function cleanTask() {
 function buildTask() {
     // console.log(process.env.PATH);
     console.log("Build Task");
-    return cp.spawn(bundle, ['exec', jekyll, 'build'], {stdio: 'inherit'})
-        .on('close', browserSync.reload)
-        .on('error', function (err) {
-            console.log(err)
-            throw err
-        });
+    return cp.spawn(bundle, ['exec', jekyll, 'build'], {stdio: 'inherit'});
 }
 
 
@@ -142,7 +137,7 @@ function watchTask() {
 // ---- Gulp Actions ----
 
 exports.watch = watchTask;
-exports.build = buildTask;
+exports.build = series(buildTask, sassTask, imageTask, fontsTask);
 exports.sass = sassTask;
 exports.image = imageTask;
 exports.fonts = fontsTask;
