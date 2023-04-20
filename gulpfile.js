@@ -15,6 +15,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const cp = require("child_process");
 
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+const bundle = process.platform === 'win32' ? 'bundle.bat' : 'bundle';
 
 const files = {
     scss: 'assets/css/sass/main.sass',
@@ -35,18 +36,18 @@ const files = {
 
 
 // Adding extra debugging information to be displayed into the console
-// (function () {
-//     const childProcess = require("child_process");
-//     const oldSpawn = childProcess.spawn;
-//
-//     function mySpawn() {
-//         console.log('spawn called');
-//         console.log(arguments);
-//         return oldSpawn.apply(this, arguments);
-//     }
-//
-//     childProcess.spawn = mySpawn;
-// })();
+(function () {
+    const childProcess = require("child_process");
+    const oldSpawn = childProcess.spawn;
+
+    function mySpawn() {
+        console.log('spawn called');
+        console.log(arguments);
+        return oldSpawn.apply(this, arguments);
+    }
+
+    childProcess.spawn = mySpawn;
+})();
 
 
 // Compile files
@@ -104,14 +105,19 @@ function fontsTask() {
 
 function cleanTask() {
     console.log("Clean Task");
-    return cp.spawn('bundle', ['exec', jekyll, 'clean'], {stdio: 'inherit'});
+    return cp.spawn(bundle, ['exec', jekyll, 'clean'], {stdio: 'inherit'});
 }
 
 
 function buildTask() {
+    // console.log(process.env.PATH);
     console.log("Build Task");
-    return cp.spawn('bundle', ['exec', jekyll, 'build'], {stdio: 'inherit'})
-        .on('close', browserSync.reload);
+    return cp.spawn(bundle, ['exec', jekyll, 'build'], {stdio: 'inherit'})
+        .on('close', browserSync.reload)
+        .on('error', function (err) {
+            console.log(err)
+            throw err
+        });
 }
 
 

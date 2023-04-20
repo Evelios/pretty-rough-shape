@@ -11,11 +11,11 @@ layout: default
     <div class="entry_content">
 
       {% if page.comic %}
-        {% include carousel.html images=page.comic dir="/assets/img/" height="100" unit="%" %}
+        {% include carousel.html images=page.comic dir="/assets/img/comics/" height="100" unit="%" %}
       {% endif %}
 
       {% if page.memory %}
-        <img src="/assets/img/{{ page.memory }}" alt="{{page.description}}"/>
+        <img src="/assets/img/Memories/{{ page.memory }}" alt="{{page.description}}"/>
       {% endif %}
 
     </div>
