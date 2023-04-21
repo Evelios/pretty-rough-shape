@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Pikachu"
+img: pikachu/pikachu-cover.png
+date: 2022-11-09 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - pikachu/pikachu-1.png
+    - pikachu/pikachu-2.png
+    - pikachu/pikachu-3.png
+    - pikachu/pikachu-4.png
+    - pikachu/pikachu-5.png
+    - pikachu/pikachu-6.png
+---

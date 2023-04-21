@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Pack Rat"
+img: pack-rat/pack-rat-cover.png
+date: 2022-11-16 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - pack-rat/pack-rat-1.png
+    - pack-rat/pack-rat-2.png
+    - pack-rat/pack-rat-3.png
+    - pack-rat/pack-rat-4.png
+    - pack-rat/pack-rat-5.png
+    - pack-rat/pack-rat-6.png
+---
