@@ -1,0 +1,15 @@
+---
+layout: post
+title: "EC Man"
+img: ec-man/ec-man-cover.png
+date: 2022-12-07 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - ec-man/ec-man-1.png
+    - ec-man/ec-man-2.png
+    - ec-man/ec-man-3.png
+    - ec-man/ec-man-4.png
+    - ec-man/ec-man-5.png
+    - ec-man/ec-man-6.png
+---

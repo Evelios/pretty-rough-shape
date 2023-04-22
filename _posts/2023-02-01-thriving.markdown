@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Thriving"
+img: thriving/thriving-cover.png
+date: 2023-02-01 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - thriving/thriving-1.png
+    - thriving/thriving-2.png
+    - thriving/thriving-3.png
+    - thriving/thriving-4.png
+---

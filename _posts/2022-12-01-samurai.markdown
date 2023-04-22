@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Samurai"
+img: samurai/samurai-cover.png
+date: 2022-12-01 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - samurai/samurai-1.png
+    - samurai/samurai-2.png
+    - samurai/samurai-3.png
+    - samurai/samurai-4.png
+    - samurai/samurai-5.png
+    - samurai/samurai-6.png
+---

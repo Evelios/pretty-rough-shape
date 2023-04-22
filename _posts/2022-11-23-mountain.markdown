@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Mountain"
+img: mountain/mountain-cover.png
+date: 2022-11-23 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - mountain/mountain-1.png
+    - mountain/mountain-2.png
+    - mountain/mountain-3.png
+    - mountain/mountain-4.png
+    - mountain/mountain-5.png
+    - mountain/mountain-6.png
+---

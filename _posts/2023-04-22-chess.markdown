@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Chess"
+img: chess/chess-cover.png
+date: 2023-04-22 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - chess/chess-1.png
+    - chess/chess-2.png
+    - chess/chess-3.png
+    - chess/chess-4.png
+---

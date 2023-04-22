@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Call"
+img: call/call-cover.png
+date: 2022-12-21 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - call/call-1.png
+    - call/call-2.png
+    - call/call-3.png
+    - call/call-4.png
+    - call/call-5.png
+    - call/call-6.png
+---

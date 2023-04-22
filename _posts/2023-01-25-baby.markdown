@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Baby"
+img: baby/baby-cover.png
+date: 2023-01-25 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - baby/baby-1.png
+    - baby/baby-2.png
+    - baby/baby-3.png
+---

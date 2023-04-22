@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Delight"
+img: delight/delight-cover.png
+date: 2022-12-05 12:00:00 +0000
+description: Description
+tag: [Comic]
+comic:
+    - delight/delight-cover.png
+    - delight/delight-1.png
+---
